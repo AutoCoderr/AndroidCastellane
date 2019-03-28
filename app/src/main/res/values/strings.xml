@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Castellane APP</string>
+
+    <string name="nav_header_desc">Wesh</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_moniteur">AddMoniteur</string>
+    <string name="title_activity_add_rendez_vous">AddRendezVous</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="title_activity_connect">Connect</string>
+    <string name="title_activity_diplomes">Diplomes</string>
+    <string name="title_activity_disconnect">Disconnect</string>
+    <string name="title_activity_fiche">Fiche</string>
+    <string name="title_activity_infos">Infos</string>
+    <string name="title_activity_list_rendez_vous">ListRendezVous</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_register_suite">RegisterSuite</string>
+</resources>

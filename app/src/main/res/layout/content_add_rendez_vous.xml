@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddRendezVous"
+    android:background="@color/Blue"
+    tools:showIn="@layout/app_bar_add_rendez_vous">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="497dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btArriere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/arrow_arriere"
+            android:text="Retour" />
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="360dp"
+            android:layout_height="51dp"
+            android:text="Ajouter un rendez vous"
+            android:textColor="#000"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/horaire"
+            android:layout_width="344dp"
+            android:layout_height="21dp"
+            android:text="(Ouvert entre 08:00 et 12:00 et entre 14:00 et 19:00)"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="267dp"
+            android:layout_height="49dp"
+            android:hint="Date du rendez vous"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/heureD"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Heure de début"
+            android:inputType="time" />
+
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="260dp"
+            android:layout_height="37dp" />
+
+        <LinearLayout
+            android:id="@+id/formuLayout"
+            android:layout_width="425dp"
+            android:layout_height="250dp"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

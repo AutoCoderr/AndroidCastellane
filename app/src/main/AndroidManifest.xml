@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ppe">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddMoniteur"
+            android:label="@string/title_activity_add_moniteur"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddRendezVous"
+            android:label="@string/title_activity_add_rendez_vous"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Connect"
+            android:label="@string/title_activity_connect"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Diplomes"
+            android:label="@string/title_activity_diplomes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Disconnect"
+            android:label="@string/title_activity_disconnect"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fiche"
+            android:label="@string/title_activity_fiche"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Infos"
+            android:label="@string/title_activity_infos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListRendezVous"
+            android:label="@string/title_activity_list_rendez_vous"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterSuite"
+            android:label="@string/title_activity_register_suite"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

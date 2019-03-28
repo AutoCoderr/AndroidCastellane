@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddMoniteur"
+    android:background="@color/Blue"
+    tools:showIn="@layout/app_bar_add_moniteur">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="474dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/btArriere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="145dp"
+            android:background="@drawable/arrow_arriere"
+            android:text="Retour" />
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un moniteur"
+            android:textColor="#000"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/txtPrenom"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Prénom" />
+
+        <EditText
+            android:id="@+id/txtNom"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Nom" />
+
+        <EditText
+            android:id="@+id/txtPassword1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Son mot de passe" />
+
+        <EditText
+            android:id="@+id/txtPassword2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Le re-rentrer" />
+        <EditText
+            android:id="@+id/txtMail"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Adresse mail" />
+        <Button
+            android:id="@+id/btAddMoniteur"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

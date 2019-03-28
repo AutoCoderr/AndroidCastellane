@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Disconnect"
+    android:background="@color/Blue"
+    tools:showIn="@layout/app_bar_disconnect">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="226dp"
+        android:layout_height="47dp"
+        android:text="Dé-connexion"
+        android:textColor="#000"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/btDisconnect"
+        android:layout_width="325dp"
+        android:layout_height="114dp"
+        android:text="Se déconnecter"
+        android:textColor="#000"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:layout_constraintVertical_bias="0.196" />
+</android.support.constraint.ConstraintLayout>

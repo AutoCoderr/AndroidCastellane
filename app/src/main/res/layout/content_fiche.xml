@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fiche"
+    android:background="@color/Blue"
+    tools:showIn="@layout/app_bar_fiche">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="341dp"
+        android:layout_height="65dp"
+        android:text="Vos informations"
+        android:textColor="#000"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <LinearLayout
+        android:id="@+id/ficheLayout"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:layout_constraintVertical_bias="0.027"></LinearLayout>
+
+    <TextView
+        android:id="@+id/titrePassword"
+        android:layout_width="307dp"
+        android:layout_height="37dp"
+        android:text="Changer de mot de passe :"
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ficheLayout"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/changePasswd1"
+        android:layout_width="311dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Votre nouveau mot de passe"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titrePassword"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <EditText
+        android:id="@+id/changePasswd2"
+        android:layout_width="311dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Re-rentre le"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePasswd1"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Button
+        android:id="@+id/btChangePasswd"
+        android:layout_width="307dp"
+        android:layout_height="49dp"
+        android:text="Changer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePasswd2"
+        app:layout_constraintVertical_bias="0.076" />
+</android.support.constraint.ConstraintLayout>
